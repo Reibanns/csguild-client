@@ -47,13 +47,13 @@ export default function BlogDetailPage({ slug }: BlogDetailPageProps) {
   // Track blog view when blog loads
   useEffect(() => {
     if (blog && blog._id && !hasViewed(slug)) {
-      // Get user information if available
-      const userSlug = blog.author?.username || null
+      // Use the current logged-in user's username when available
+      const viewerSlug = user?.username || undefined
 
       // Track the view
       viewBlogMutation({
         blogId: blog._id,
-        userSlug: userSlug || undefined,
+        userSlug: viewerSlug,
         ipAddress: undefined, // Client-side IP detection not reliable
         userAgent: navigator.userAgent,
         referrer: document.referrer || undefined,
@@ -69,7 +69,7 @@ export default function BlogDetailPage({ slug }: BlogDetailPageProps) {
           console.error('Failed to track blog view:', error)
         })
     }
-  }, [blog, slug, hasViewed, markAsViewed, viewBlogMutation])
+  }, [blog, slug, hasViewed, markAsViewed, viewBlogMutation, user?.username])
 
   // Ensure blog has required properties with defaults
   const blogWithDefaults = blog ? {

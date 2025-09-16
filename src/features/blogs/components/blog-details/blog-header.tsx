@@ -18,7 +18,7 @@ interface BlogHeaderProps {
 }
 
 export function BlogHeader({ blog }: BlogHeaderProps) {
-  const publishedDate = blog.publishedAt ? new Date(blog.publishedAt) : new Date(blog.createdAt)
+  const publishedDate = blog.publishedAt ? new Date(blog.publishedAt) : new Date(blog.createdAt || 0)
   const readingTime = blog.readingTime || Math.ceil((blog.content?.length || 0) / 1000)
 
   return (
@@ -64,7 +64,7 @@ export function BlogHeader({ blog }: BlogHeaderProps) {
               <span>•</span>
               <span className="flex items-center gap-1">
                 <Eye className="w-3 h-3" />
-                {blog.viewCount.toLocaleString()} views
+                {blog.viewCount?.toLocaleString()} views
               </span>
             </div>
           </div>
