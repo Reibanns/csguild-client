@@ -26,8 +26,7 @@ export const publishBlogHandler = async (
   }
 
   // TODO: Add admin/moderator role check here
-  // For now, allowing the author to publish their own blogs
-  // In production, this should check for admin/moderator permissions
+  const currentUser = await ctx.db.get(userId);
 
   // Get the blog by slug
   const blog = await ctx.db
@@ -40,7 +39,7 @@ export const publishBlogHandler = async (
   }
 
   // Only allow publishing if user is author or admin
-  if (user.username !== blog.authorSlug) {
+  if ((user.username !== blog.authorSlug) && !currentUser?.roles?.includes("ADMIN")) {
     throw new Error("You can only publish your own blogs or must be an admin");
   }
 
