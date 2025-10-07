@@ -16,14 +16,14 @@ const mentors = [
     name: 'John Kristoffer I. Bicierro',
     division: 'Technology & Development Division',
     teaching: 'Software Engineer & Full Stack Developer',
-    bookingUrl: 'https://calendar.google.com/',
+    bookingUrl: '',
     socialUrl: '/',
   },
   {
     name: 'Melchor Filippe S. Bulanon',
     division: 'Research & Innovation Division',
     teaching: 'IoT & AI Engineer',
-    bookingUrl: 'https://calendar.google.com/',
+    bookingUrl: '',
     socialUrl: '/',
     imageUrl: '/mentors/Melchor_Bulanon.jpg'
   },
@@ -31,7 +31,7 @@ const mentors = [
     name: 'Christian Vincent D. Cabral',
     division: 'Research & Innovation Division',
     teaching: 'ML Engineer',
-    bookingUrl: 'https://calendar.google.com/',
+    bookingUrl: 'https://calendar.app.google/bwAUKNnD8Bp6omMp9',
     socialUrl: '/',
     imageUrl: '/mentors/Christian_Cabral.jpg'
   },
@@ -39,7 +39,7 @@ const mentors = [
     name: 'Romar John E. Castro',
     division: 'Technology & Development Division',
     teaching: 'UI/UX Designer & Frontend Developer',
-    bookingUrl: 'https://calendar.google.com/',
+    bookingUrl: 'https://calendar.app.google/drmCq8ffLAJi44rCA',
     socialUrl: '/',
     imageUrl: '/mentors/Romar_Castro.jpg'
   },
@@ -47,7 +47,7 @@ const mentors = [
     name: 'Gabriel Angelo B. Catimbang',
     division: 'Technology & Development Division',
     teaching: 'DevOps Engineer & System Administrator',
-    bookingUrl: 'https://calendar.google.com/',
+    bookingUrl: '',
     socialUrl: '/',
     imageUrl: '/mentors/Gabriel_Catimbang.jpg'
   },
@@ -55,14 +55,14 @@ const mentors = [
     name: 'John Michael V. Coronel',
     division: 'Technology & Development Division',
     teaching: 'Game Developer',
-    bookingUrl: 'https://calendar.google.com/',
+    bookingUrl: '',
     socialUrl: '/',
   },
   {
     name: 'Selwyn John G. Guiruela',
     division: 'Research & Innovation Division',
     teaching: 'Blockchain & Web3 Developer',
-    bookingUrl: 'https://calendar.google.com/',
+    bookingUrl: 'https://calendar.app.google/T7BHzBC5eAvowfLUA',
     socialUrl: '/',
     imageUrl: '/mentors/Selwyn_Guiruela.jpg'
   },
@@ -70,7 +70,7 @@ const mentors = [
     name: 'Miguel Andre R. Pajarillo',
     division: 'Research & Innovation Division',
     teaching: 'Data Analytics & Project Management',
-    bookingUrl: 'https://calendar.google.com/',
+    bookingUrl: '',
     socialUrl: '/',
     imageUrl: '/mentors/Miguel_Pajarillo.jpg'
   },
@@ -78,14 +78,14 @@ const mentors = [
     name: 'Wilfredo Paulo A. Perez',
     division: 'Research & Innovation Division',
     teaching: 'Network Security Specialists & Cybersecurity Researcher',
-    bookingUrl: 'https://calendar.google.com/',
+    bookingUrl: 'https://calendar.app.google/miWphMmL8Eaqubwp9',
     socialUrl: '/',
   },
   {
     name: 'Miguel Armand B. Sta Ana',
     division: 'Technology & Development Division',
     teaching: 'Backend Developer',
-    bookingUrl: 'https://calendar.google.com/',
+    bookingUrl: '',
     socialUrl: '/',
   },
 ]
